@@ -1,8 +1,9 @@
 {
     "app-id": "com.github.muriloventuroso.easyssh",
-    "runtime": "org.gnome.Platform",
-    "runtime-version": "3.28",
-    "sdk": "org.gnome.Sdk",
+    "base": "io.elementary.Loki.BaseApp",
+    "runtime": "org.freedesktop.Platform",
+    "sdk": "org.freedesktop.Sdk",
+    "runtime-version": "1.6",
     "command": "com.github.muriloventuroso.easyssh",
     "finish-args": [
         "--share=ipc",
@@ -17,10 +18,6 @@
         "--filesystem=~/.config/dconf:ro"
     ],
     "build-options": {
-        "env": {
-            "PKG_CONFIG_GOBJECT_INTROSPECTION_1_0_GIRDIR": "/app/share/gir-1.0",
-            "PKG_CONFIG_GOBJECT_INTROSPECTION_1_0_TYPELIBDIR": "/app/lib/girepository-1.0"
-        },
         "cflags": "-O2",
         "cxxflags": "-O2"
     },
@@ -37,17 +34,6 @@
                 }
             ]
         },
-
-        {
-            "name": "libgee",
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/GNOME/libgee/archive/0.20.0.tar.gz",
-                    "sha256": "42fe6d651910cb8b720167f71c5255a1b7b1afc82fecd3f31e61f9602b3b1335"
-                }
-            ]
-        },
         {
             "name": "libvte",
             "sources": [
@@ -58,32 +44,6 @@
                 }
             ]
         },
-        
-        {
-            "name": "granite",
-            "buildsystem": "cmake-ninja",
-            "config-opts": [
-                "-DCMAKE_BUILD_TYPE=Release"
-            ],
-            "cleanup": [
-                "/bin",
-                "/include",
-                "/share/vala",
-                "/share/gir-1.0",
-                "/share/applications",
-                "/lib/pkgconfig",
-                "/lib/girepository-1.0",
-                "/lib/*.la"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/elementary/granite/archive/5.0.tar.gz",
-                    "sha256": "62dd9a8ddef61d42bb77fdc6626e235d3129bd438533a1575652f7a15fd186c8"
-                }
-            ]
-        },
-
         {
             "name": "easyssh",
             "buildsystem": "meson",
