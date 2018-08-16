@@ -50,8 +50,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/muriloventuroso/easyssh/archive/1.2.10.tar.gz",
-                    "sha256": "6072ed7cf6a798c0d3b05b359a157f5d9e99a25faa6675f2c5be900db51a6c1c"
+                    "url": "https://github.com/muriloventuroso/easyssh/archive/1.3.0.tar.gz",
+                    "sha256": "7a20b59f3e9072084dfd6da494bf5c539321aa8de0526cb9143f2bb64fe31f96"
                 }
             ],
              "post-install": [
