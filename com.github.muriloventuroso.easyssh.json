@@ -47,7 +47,7 @@
         {
             "name": "easyssh",
             "buildsystem": "meson",
-            "config-opts": ["--disable-libunity"],
+            "config-opts": ["-Dlibunity=false"],
             "sources": [
                 {
                     "type": "archive",
