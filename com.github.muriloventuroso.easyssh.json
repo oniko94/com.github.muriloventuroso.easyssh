@@ -1,8 +1,10 @@
 {
     "app-id": "com.github.muriloventuroso.easyssh",
-    "base": "io.elementary.Juno.BaseApp",
-    "runtime": "org.freedesktop.Platform",
-    "sdk": "org.freedesktop.Sdk",
+    "runtime-version" : "3.30",
+	"base" : "io.elementary.BaseApp",
+    "base-version" : "juno",
+    "runtime": "org.gnome.Platform",
+    "sdk": "org.gnome.Sdk",
     "runtime-version": "1.6",
     "command": "com.github.muriloventuroso.easyssh",
     "finish-args": [
@@ -23,6 +25,16 @@
     },
 
     "modules": [
+        {
+            "name": "gnupg",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://gnupg.org/ftp/gcrypt/gnupg/gnupg-2.2.11.tar.bz2",
+                    "sha256": "496c3e123ef53f35436ddccca58e82acaa901ca4e21174e77386c0cea0c49cd9"
+                }
+            ]
+        },
         {
             "name": "openssh",
             "config-opts": ["--without-pie"],
@@ -51,8 +63,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/muriloventuroso/easyssh/archive/1.3.5.tar.gz",
-                    "sha256": "cf9a21c9279895d20cc25a66fe96a9d27fa31e81586ceeabe2572c175694271f"
+                    "url": "https://github.com/muriloventuroso/easyssh/archive/1.4.1.tar.gz",
+                    "sha256": "a72513d3d2e533830def7c7913d85f25ad0b7dc060ac06ab7d78fa916cd4507c"
                 }
             ],
              "post-install": [
