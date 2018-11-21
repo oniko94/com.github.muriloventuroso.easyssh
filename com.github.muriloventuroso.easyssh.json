@@ -1,11 +1,10 @@
 {
     "app-id": "com.github.muriloventuroso.easyssh",
-    "runtime-version" : "3.30",
-	"base" : "io.elementary.BaseApp",
-    "base-version" : "juno",
     "runtime": "org.gnome.Platform",
+    "runtime-version" : "3.30",
+    "base" : "io.elementary.BaseApp",
+    "base-version" : "juno",
     "sdk": "org.gnome.Sdk",
-    "runtime-version": "1.6",
     "command": "com.github.muriloventuroso.easyssh",
     "finish-args": [
         "--share=ipc",
