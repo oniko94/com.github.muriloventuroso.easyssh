@@ -12,6 +12,7 @@
         "--socket=x11",
         "--device=dri",
         "--socket=wayland",
+        "--socket=ssh-auth",
         "--filesystem=home",
         "--talk-name=ca.desrt.dconf",
         "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
