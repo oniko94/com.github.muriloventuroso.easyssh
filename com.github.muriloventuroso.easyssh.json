@@ -1,7 +1,7 @@
 {
     "app-id": "com.github.muriloventuroso.easyssh",
     "runtime": "org.gnome.Platform",
-    "runtime-version" : "3.30",
+    "runtime-version" : "3.34",
     "base" : "io.elementary.BaseApp",
     "base-version" : "juno",
     "sdk": "org.gnome.Sdk",
@@ -63,8 +63,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/muriloventuroso/easyssh/archive/1.6.2.tar.gz",
-                    "sha256": "6f987ef861282be1eed2148c64f4d1e944cdf78a01b20807d717fe2f4e1a3426"
+                    "url": "https://github.com/muriloventuroso/easyssh/archive/1.6.3.tar.gz",
+                    "sha256": "fe54fd76af63424437c3c2515330fa9248949738ad6ecfe3b84a7ad55d863897"
                 }
             ],
              "post-install": [
