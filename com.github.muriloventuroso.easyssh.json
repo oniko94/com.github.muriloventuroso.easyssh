@@ -19,43 +19,7 @@
         "--filesystem=xdg-run/dconf",
         "--filesystem=~/.config/dconf:ro"
     ],
-    "build-options": {
-        "cflags": "-O2",
-        "cxxflags": "-O2"
-    },
-
     "modules": [
-        {
-            "name": "gnupg",
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://gnupg.org/ftp/gcrypt/gnupg/gnupg-2.2.11.tar.bz2",
-                    "sha256": "496c3e123ef53f35436ddccca58e82acaa901ca4e21174e77386c0cea0c49cd9"
-                }
-            ]
-        },
-        {
-            "name": "openssh",
-            "config-opts": ["--without-pie"],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://cloudflare.cdn.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-7.9p1.tar.gz",
-                    "sha256": "6b4b3ba2253d84ed3771c8050728d597c91cfce898713beb7b64a305b6f11aad"
-                }
-            ]
-        },
-        {
-            "name": "libvte",
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "http://ftp.acc.umu.se/pub/gnome/sources/vte/0.52/vte-0.52.2.tar.xz",
-                    "sha256": "0f2657cef52accbfe56feede553155552d7c1984b1291838af3cb8cfc19b26af"
-                }
-            ]
-        },
         {
             "name": "easyssh",
             "buildsystem": "meson",
