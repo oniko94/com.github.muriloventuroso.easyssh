@@ -3,7 +3,7 @@
     "runtime": "org.gnome.Platform",
     "runtime-version" : "3.34",
     "base" : "io.elementary.BaseApp",
-    "base-version" : "juno",
+    "base-version" : "juno-19.08",
     "sdk": "org.gnome.Sdk",
     "command": "com.github.muriloventuroso.easyssh",
     "finish-args": [
@@ -14,10 +14,7 @@
         "--socket=wayland",
         "--socket=ssh-auth",
         "--filesystem=home",
-        "--talk-name=ca.desrt.dconf",
-        "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
-        "--filesystem=xdg-run/dconf",
-        "--filesystem=~/.config/dconf:ro"
+        "--metadata=X-DConf=migrate-path=/com/github/muriloventuroso/easyssh/"
     ],
     "modules": [
         {
@@ -29,11 +26,12 @@
                     "type": "archive",
                     "url": "https://github.com/muriloventuroso/easyssh/archive/1.6.3.tar.gz",
                     "sha256": "fe54fd76af63424437c3c2515330fa9248949738ad6ecfe3b84a7ad55d863897"
+                },
+                {
+                    "type": "patch",
+                    "path": "eos-theme.patch"
                 }
-            ],
-             "post-install": [
-                 "glib-compile-schemas /app/share/glib-2.0/schemas/"
-             ]
+            ]
         }
     ]
 }
