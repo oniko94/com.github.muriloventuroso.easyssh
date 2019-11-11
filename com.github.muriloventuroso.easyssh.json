@@ -24,8 +24,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/muriloventuroso/easyssh/archive/1.6.3.tar.gz",
-                    "sha256": "fe54fd76af63424437c3c2515330fa9248949738ad6ecfe3b84a7ad55d863897"
+                    "url": "https://github.com/muriloventuroso/easyssh/archive/1.6.5.tar.gz",
+                    "sha256": "7159509f86e425b49538c92bd2d5cc9b9b498ff63479fb39bb7dd193b9efce5b"
                 },
                 {
                     "type": "patch",
