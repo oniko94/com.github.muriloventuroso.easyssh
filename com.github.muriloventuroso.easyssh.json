@@ -18,14 +18,30 @@
     ],
     "modules": [
         {
+            "name" : "vte",
+            "buildsystem" : "meson",
+            "build-options" : {
+                "env" : {
+                    "CXXFLAGS" : "-fno-exceptions"
+                }
+            },
+            "sources" : [
+                {
+                    "type" : "git",
+                    "url" : "https://gitlab.gnome.org/GNOME/vte.git",
+                    "branch" : "0.59.92"
+                }
+            ]
+        },
+        {
             "name": "easyssh",
             "buildsystem": "meson",
-            "config-opts": ["-Dlibunity=false", "-Dubuntu-bionic-patched-vte=false"],
+            "config-opts": ["-Dlibunity=false", "-Dubuntu-bionic-patched-vte=false", "-Dpatched-vte=true"],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/muriloventuroso/easyssh/archive/1.7.3.tar.gz",
-                    "sha256": "d8a86ecbc58e8b585d41b926d4721cdc497cd74912cc30a829d49a89e20fa008"
+                    "url": "https://github.com/muriloventuroso/easyssh/archive/1.7.4.tar.gz",
+                    "sha256": "4c7670ae22b8d022d3e50338d309a711d831da708d5dc9ee50c58131939f910f"
                 },
                 {
                     "type": "patch",
@@ -35,4 +51,3 @@
         }
     ]
 }
-
