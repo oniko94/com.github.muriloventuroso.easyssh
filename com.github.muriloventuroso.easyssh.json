@@ -29,7 +29,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/GNOME/vte.git",
-                    "branch" : "0.59.92"
+                    "branch" : "vte-0.60"
                 }
             ]
         },
