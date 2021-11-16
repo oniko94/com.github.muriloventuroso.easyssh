@@ -114,8 +114,7 @@
             "name" : "vte",
             "buildsystem" : "meson",
             "config-opts": [
-                "-Ddocs=false",
-                "-Dvapi=false"
+                "-Ddocs=false"
             ],
             "sources" : [
                 {
