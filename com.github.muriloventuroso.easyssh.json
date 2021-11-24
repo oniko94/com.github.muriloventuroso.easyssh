@@ -131,8 +131,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/muriloventuroso/easyssh/archive/refs/tags/1.7.6.tar.gz",
-                    "sha256": "dde7f00a3a032d30e7566bd97250550d71dd825609be07a63384c5c00038f0ce"
+                    "url": "https://github.com/muriloventuroso/easyssh/archive/refs/tags/1.7.7.tar.gz",
+                    "sha256": "a43565bbc0e1c3796e393ee464bfc5360f09ffee0ed6952f14010d181bfa7c07"
                 }
             ]
         }
