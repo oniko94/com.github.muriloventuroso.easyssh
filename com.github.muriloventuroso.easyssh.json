@@ -111,7 +111,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/elementary/granite.git",
-                    "tag": "6.2.0"
+                    "tag": "6.2.0",
                     "commit": "4ab145c28bb3db6372fe519e8bd79c645edfcda3"
                 }
             ]
