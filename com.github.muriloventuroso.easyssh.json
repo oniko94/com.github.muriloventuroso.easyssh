@@ -138,7 +138,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/muriloventuroso/easyssh.git",
-                    "tag": "1.7.8",
+                    "tag": "1.7.9",
                     "commit": "d029a52f36bcad7ae28765dc2bfdb819594bcd03"
                 }
             ]
